@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 1px solid red;
+}
+
+html {
+  background: url("../images/light.png");
+}
+
+.main-container {
+  width: 80%;
+  margin: 0 auto;
+  height: 500px;
+}
+
+
+
+nav {
+  font-size: 25px;
+}
+
+nav h3 {
+  float: left;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 50px;
+}
+
+nav a {
+  text-decoration: none;
+  color: green;
+
+}
+
+nav span {
+  float: right;
+}
