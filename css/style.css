@@ -7,10 +7,11 @@
 
 html {
   background: url("../images/light.png");
+  font-family: 'Oswald', sans-serif;
 }
 
 .main-container {
-  width: 80%;
+  width: 73%;
   margin: 0 auto;
   height: 500px;
 }
@@ -18,16 +19,27 @@ html {
 
 
 nav {
-  font-size: 25px;
+  text-transform: uppercase;
+  border: 1px solid green;
+}
+
+nav::after {
+  content: "";
+  display: table;
+  clear: both;
+
 }
 
 nav h3 {
   float: left;
+  font-size: 25px;
 }
 
 nav li {
   display: inline-block;
-  margin-left: 50px;
+  margin-left: 25px;
+  font-weight: bolder;
+  font-size: 12px;
 }
 
 nav a {
