@@ -99,3 +99,15 @@ nav span {
   opacity: 1;
   padding-top: 10px;
 }
+
+
+
+footer {
+  background: darkblue;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  justify-content: space-around;
+  border-top: 3px groove darkblue;
+}
