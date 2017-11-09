@@ -5,7 +5,8 @@
 }
 
 html {
-  background: url("../images/light.png");
+  background-color: #bfbfbf;
+  background-image: url("https://www.transparenttextures.com/patterns/brushed-alum.png");
   font-family: 'Oswald', sans-serif;
 }
 
@@ -19,9 +20,10 @@ html {
 
 nav {
   text-transform: uppercase;
-  border: 1px solid green;
-  padding: 15px 0;
+  height: 50px;
   position: relative;
+  padding-top: 20px;
+  margin-bottom: 15px;
 }
 
 nav::after {
@@ -34,7 +36,6 @@ nav::after {
 nav h3 {
   float: left;
   font-size: 30px;
-  background: yellow;
   line-height: 30px;
   position: absolute;
   bottom: 0;
@@ -42,17 +43,59 @@ nav h3 {
 
 nav li {
   display: inline-block;
-  padding: 0px 20px;
+  padding: 10px 20px;
   font-weight: bolder;
   font-size: 12px;
 }
 
 nav a {
   text-decoration: none;
-  color: green;
+  color: black;
 
 }
 
 nav span {
   float: right;
+}
+
+.megamenu {
+  width: 100%;
+  height: 400px;
+  box-shadow: 2px 2px 5px black;
+  position: relative;
+}
+
+.megamenu img {
+  width: 100%;
+  height: 100%;
+}
+
+.active {
+  color: white;
+  background: black;
+}
+
+
+.picInfo {
+  position: absolute;
+  top: 65px;
+  left: 50px;
+  box-shadow: 2px 2px 5px black;
+  background: rgb(12, 12, 12);
+  color: #E3F8FF;
+  opacity: 0.6;
+  padding: 10px 25px 5px 5px;
+  line-height: 50px;
+}
+
+.medium {
+  font-size: 40px;
+  padding-top: 10px;
+  opacity: 1;
+}
+
+.large {
+  font-size: 50px;
+  opacity: 1;
+  padding-top: 10px;
 }
