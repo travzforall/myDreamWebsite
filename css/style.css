@@ -19,33 +19,30 @@ html {
 
 
 nav {
+  display: flex;
   text-transform: uppercase;
-  height: 50px;
-  position: relative;
-  padding-top: 20px;
+  align-items: center;
+  justify-content: space-between;
   margin-bottom: 15px;
 }
 
-nav::after {
-  content: "";
-  display: table;
-  clear: both;
-
-}
 
 nav h3 {
   float: left;
   font-size: 30px;
-  line-height: 30px;
-  position: absolute;
-  bottom: 0;
+}
+
+nav ul {
+  display: flex;
+  width: 450px;
+  justify-content: space-between;
+  transition: 3s;
 }
 
 nav li {
-  display: inline-block;
-  padding: 10px 20px;
+  list-style: none;
   font-weight: bolder;
-  font-size: 12px;
+  font-size: 15px;
 }
 
 nav a {
@@ -54,15 +51,28 @@ nav a {
 
 }
 
-nav span {
-  float: right;
+
+
+@media (max-width: 750px) {
+  nav ul {
+    width: 300px;
+  }
+
+  .picInfo {
+    margin: 0 auto;
+  }
 }
+
 
 .megamenu {
   width: 100%;
   height: 400px;
   box-shadow: 2px 2px 5px black;
-  position: relative;
+  display: flex;
+  background-size: 100% 100%;
+  background-image: url("../images/background.jpeg");
+  align-items: center;
+  transition: 15s;
 }
 
 .megamenu img {
@@ -77,19 +87,18 @@ nav span {
 
 
 .picInfo {
-  position: absolute;
-  top: 65px;
-  left: 50px;
+  height: 300px;
+  width: 400px;
   box-shadow: 2px 2px 5px black;
-  background: rgb(12, 12, 12);
+  background: rgb(0, 0, 0);
   color: #E3F8FF;
-  opacity: 0.6;
-  padding: 10px 25px 5px 5px;
+  opacity: 0.70;
+  padding: 10px 25px 5px 15px;
   line-height: 50px;
 }
 
 .medium {
-  font-size: 40px;
+  font-size: 30px;
   padding-top: 10px;
   opacity: 1;
 }
@@ -98,16 +107,49 @@ nav span {
   font-size: 50px;
   opacity: 1;
   padding-top: 10px;
+  color: #338EE2;
 }
 
 
 
 footer {
-  background: darkblue;
+  background: #000033;
   width: 100%;
+  height: 100px;
   display: flex;
   position: fixed;
   bottom: 0;
   justify-content: space-around;
-  border-top: 3px groove darkblue;
+  border-top: 5px groove #338EE2;
+}
+
+footer div {
+  width: 200px;
+  text-align: center;
+}
+
+footer .icons {
+  padding-top: 10px;
+
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+
+footer h3 {
+  color: #3366FF;
+  text-decoration: underline;
+}
+
+footer p {
+  color: #E3F8FF;
+}
+
+footer i {
+  color: #338EE2;
+}
+
+footer i:hover {
+  cursor: point;
 }
