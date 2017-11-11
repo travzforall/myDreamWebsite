@@ -136,6 +136,24 @@ footer .icons {
   justify-content: space-between;
 }
 
+.footerelements {
+
+
+}
+
+@media (max-width: 750px){
+  .footerelements {
+    animation: footerelements 2s ease-in forwards;
+
+  }
+}
+
+@keyframes footerelements {
+  100%{
+    transform:scale(.75);
+  }
+}
+
 
 footer h3 {
   color: #3366FF;
