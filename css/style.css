@@ -52,8 +52,47 @@ nav a {
 }
 
 
+.row {
+  width: 100%;
+  background: green;
+  display: flex;
+  align-content: space-between;
 
-@media (max-width: 750px) {
+}
+
+.tab {
+  background-color: #000033;
+  color: lightgrey;
+  border: none;
+  width: 33.3333%;
+    padding: 10px;
+}
+
+.tab.active {
+  background-color: #338EE2;
+  color: green;
+}
+
+.displayed {
+  opacity: 1;
+  background: grey;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 15px;
+}
+
+
+
+.hidden {
+  opacity: 0;
+  max-height: 0;
+}
+
+
+
+
+
+@media (max-width: 900px) {
   nav ul {
     width: 300px;
   }
@@ -170,4 +209,15 @@ footer i {
 
 footer i:hover {
   cursor: point;
+}
+
+@media (max-width: 600px) {
+  .main-nav {
+    display: block;
+    padding: 10px;
+  }
+
+  .main-nav ul {
+    width: 100%;
+  }
 }
