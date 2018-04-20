@@ -16,6 +16,14 @@ html {
   height: 500px;
 }
 
+#myform {
+  position: absolute;
+  right: 0%;
+  bottom: 0%;
+  background: rgba(20, 3, 66, 0.5);
+  color: whitesmoke;
+  padding: 10px;
+}
 
 
 nav {
@@ -112,6 +120,7 @@ nav a {
   background-image: url("../images/background.jpeg");
   align-items: center;
   transition: 15s;
+  position: relative;
 }
 
 .megamenu img {
