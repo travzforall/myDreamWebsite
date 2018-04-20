@@ -9,4 +9,4 @@ This stater web project was created with the goal of optimization.
 This was meant to introduce me to the concepts of various CSS Technologies
 
 ## How to contribute
-Clone this particular project and explore!
+Clone this particular project and explore! Reviewing rebasing!
